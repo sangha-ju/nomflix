@@ -1,37 +1,71 @@
 import axios from "axios";
 
+const aKey = "7d5fb8b638a62957dfbecdb86edc6eb1"
+
 const api = axios.create({
     baseURL: "https://api.themoviedb.org/3/",
     params: {
-        api_key: "10923b261ba94d897ac6b81148314a3f",
+        api_key: aKey,
         language: "en-US"
     }
 });
 
-export const moivesApi = {
-    nowPlaying: () => api.get("movie/now_playing"),
-    upcoming: () => api.get("movie/upcoming"),
-    popular: () => api.get("movie/popular"),
-    movieDetail: (id) => api.get(`movie/${id}`, {
+export const moviesApi = {
+    nowPlaying: () => api.get("movie/now_playing", {
         params: {
-            append_to_response: "videos"
+            api_key: aKey
         }
     }),
-    search: term => api.get("search/movie", {
-        params: encodeURIComponent(term)
-    })
-}
+    upcoming: () =>  api.get("movie/upcoming", {
+        params: {
+            api_key: aKey
+        }
+    }),
+    popular: () => api.get("movie/popular", {
+        params: {
+            api_key: aKey
+        }
+    }),
+    movieDetail: id => 
+        api.get(`moive/${id}`, {
+            params: {
+                append_to_response: "videos"
+            }
+        }),
+    search: term =>
+        api.get("search/movie", {
+            params: {
+                query: encodeURIComponent(term)
+            }
+        })
+};
 
 export const tvApi = {
-    topRated: () => api.get("tv/top_rated"),
-    popular: () => api.get("tv/popular"),
-    airingToday: () => api.get("tv/airing_today"),
-    showDetail: (id) => api.get(`tv/${id}`, {
+    topRated: () => api.get("tv/top_rated", {
         params: {
-            append_to_response: "videos"
+            api_key: aKey
         }
     }),
-    search: term => api.get("search/tv", {
-        params: encodeURIComponent(term)
-    })
+    popular: () => api.get("tv/popular", {
+        params: {
+            api_key: aKey
+        }
+    }),
+    airingToday: () => api.get("tv/airing_today", {
+        params: {
+            api_key: aKey
+        }
+    }),
+    showDetail: id =>
+        api.get(`tv/${id}`, {
+            params: {
+                append_to_response: "videos"
+            }
+        }),
+    search: term => 
+        api.get("search/tv", {
+            params: {
+                query: encodeURIComponent(term)
+            }
+        })
 }

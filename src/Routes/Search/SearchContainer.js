@@ -22,8 +22,12 @@ export default class extends Component {
         const { searchTerm } = this.state;
         this.setState({ loading: true });
         try {
-            const { data: { results: movieResults } } = await tvApi.search(searchTerm);
-            const { data: { results: tvResults } } = await tvApi.search(searchTerm);
+            const { 
+                data: { results: movieResults } 
+            } = await tvApi.search(searchTerm);
+            const { 
+                data: { results: tvResults } 
+            } = await tvApi.search(searchTerm);
             this.setState({
                 movieResults,
                 tvResults
@@ -50,6 +54,7 @@ export default class extends Component {
                 searchTerm={ searchTerm }
                 loading={ loading }
                 error={ error }
+                handleSubmit={ this.handleSubmit }
             />
         )
     }
