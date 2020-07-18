@@ -11,61 +11,37 @@ const api = axios.create({
 });
 
 export const moviesApi = {
-    nowPlaying: () => api.get("movie/now_playing", {
-        params: {
-            api_key: aKey
-        }
+  nowPlaying: () => api.get("movie/now_playing"),
+  upcoming: () => api.get("movie/upcoming"),
+  popular: () => api.get("movie/popular"),
+  movieDetail: id =>
+    api.get(`movie/${id}`, {
+      params: {
+        append_to_response: "videos"
+      }
     }),
-    upcoming: () =>  api.get("movie/upcoming", {
-        params: {
-            api_key: aKey
-        }
-    }),
-    popular: () => api.get("movie/popular", {
-        params: {
-            api_key: aKey
-        }
-    }),
-    movieDetail: id => 
-        api.get(`moive/${id}`, {
-            params: {
-                append_to_response: "videos"
-            }
-        }),
-    search: term =>
-        api.get("search/movie", {
-            params: {
-                query: encodeURIComponent(term)
-            }
-        })
+  search: term =>
+    api.get("search/movie", {
+      params: {
+        query: encodeURIComponent(term)
+      }
+    })
 };
 
 export const tvApi = {
-    topRated: () => api.get("tv/top_rated", {
-        params: {
-            api_key: aKey
-        }
+  topRated: () => api.get("tv/top_rated"),
+  popular: () => api.get("tv/popular"),
+  airingToday: () => api.get("tv/airing_today"),
+  showDetail: id =>
+    api.get(`tv/${id}`, {
+      params: {
+        append_to_response: "videos"
+      }
     }),
-    popular: () => api.get("tv/popular", {
-        params: {
-            api_key: aKey
-        }
-    }),
-    airingToday: () => api.get("tv/airing_today", {
-        params: {
-            api_key: aKey
-        }
-    }),
-    showDetail: id =>
-        api.get(`tv/${id}`, {
-            params: {
-                append_to_response: "videos"
-            }
-        }),
-    search: term => 
-        api.get("search/tv", {
-            params: {
-                query: encodeURIComponent(term)
-            }
-        })
-}
+  search: term =>
+    api.get("search/tv", {
+      params: {
+        query: encodeURIComponent(term)
+      }
+    })
+};
