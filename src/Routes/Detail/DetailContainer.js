@@ -26,6 +26,7 @@ export default class extends Component {
             },
             history: { push },
         } = this.props;
+        console.log(this.props);
         const { isMovie } = this.state;
         const parsedId = parseInt(id);
         if(isNaN(parsedId)) {
