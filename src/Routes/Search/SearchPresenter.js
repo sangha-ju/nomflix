@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Loader from "../../Components/Loader";
 import Section from "../../Components/Section";
+import Message from "../../Components/Message";
 
 const SearchPresenter = ({ movieResults, tvResults, searchTerm, handleSubmit, loading, error, updateTerm }) =>
     <Container>
@@ -26,6 +27,13 @@ const SearchPresenter = ({ movieResults, tvResults, searchTerm, handleSubmit, lo
                             <span key={ show.id }>{ show.name }</span>
                         )) }
                     </Section>
+                ) }
+                { error && <Message color="#e74c3c" text={ error } /> }
+                { tvResults && 
+                  movieResults && 
+                  tvResults.length === 0 && 
+                  movieResults.length === 0 && (
+                  <Message text="Noting found" color="#95a5a6" />
                 ) }
             </>
         ) }

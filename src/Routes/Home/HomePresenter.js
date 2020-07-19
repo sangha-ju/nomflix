@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Section from "../../Components/Section";
 import Loader from "../../Components/Loader";
+import Message from "../../Components/Message";
 
 const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
     loading ? <Loader /> : (
@@ -28,6 +29,7 @@ const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
                     )) }
                 </Section>
             ) }
+             { error && <Message color="#e74c3c" text={ error } /> }
         </Container>
     )
 
