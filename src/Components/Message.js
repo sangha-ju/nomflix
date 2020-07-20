@@ -8,6 +8,10 @@ const Message = ({ text, color }) => (
     </Container>
 );
 
+Message.propTypes = {
+    text: PropTypes.string.isRequired
+}
+
 const Container = styled.div `
     width: 100vw;
     display: flex;
@@ -17,9 +21,5 @@ const Container = styled.div `
 const Text = styled.span `
     color: ${props => props.color};
 `;
-
-Message.propTypes = {
-    text: PropTypes.string.isRequired
-}
 
  export default Message;
