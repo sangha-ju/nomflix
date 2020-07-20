@@ -42,11 +42,11 @@ export default class extends React.Component {
     const { nowPlaying, upcoming, popular, error, loading } = this.state;
     return (
       <HomePresenter
-        nowPlaying={nowPlaying}
-        upcoming={upcoming}
-        popular={popular}
-        error={error}
-        loading={loading}
+        nowPlaying={ nowPlaying }
+        upcoming={ upcoming }
+        popular={ popular }
+        error={ error }
+        loading={ loading }
       />
     );
   }
