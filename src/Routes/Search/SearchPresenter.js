@@ -78,6 +78,7 @@ const Input = styled.input `
     all: unset;
     font-size: 28px;
     width: 100%;
+    margin-top: 20px;
 `;
 
 export default SearchPresenter;

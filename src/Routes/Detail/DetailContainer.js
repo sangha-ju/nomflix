@@ -14,7 +14,7 @@ export default class extends Component {
             result: null,
             error: null,
             loading: true,
-            isMovie: pathname.includes("/moive/")
+            isMovie: pathname.includes("/movie/")
         };
     }
    
@@ -26,7 +26,6 @@ export default class extends Component {
             },
             history: { push },
         } = this.props;
-        console.log(this.props);
         const { isMovie } = this.state;
         const parsedId = parseInt(id);
         if(isNaN(parsedId)) {
@@ -35,11 +34,9 @@ export default class extends Component {
         let result = null;
         try {
             if(isMovie) {
-                const request = await moviesApi.movieDetail(parsedId);
-                result = request.data;
+                ({ data: result } = await moviesApi.movieDetail(parsedId));
             } else {
-                const request = await tvApi.showDetail(parsedId);
-                result = request.data;
+                ({ data: result } = await tvApi.showDetail(parsedId));
             }
         } catch {
             this.setState({
