@@ -10,7 +10,7 @@ import Poster from "../../Components/Poster";
 const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) => (
     <>
         <Helmet>
-                <title>Movies | NomFlix</title>
+                <title>Movies | JooFlix</title>
         </Helmet>
         { 
             loading ? <Loader /> : (

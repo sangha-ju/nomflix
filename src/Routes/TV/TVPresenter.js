@@ -11,7 +11,7 @@ import Poster from "../../Components/Poster";
 const TVPresenter = ({ topRated, popular, airingToday, loading, error }) => (
     <>
         <Helmet>
-            <title>TV Shows | NomFlix</title>
+            <title>TV Shows | JooFlix</title>
         </Helmet>
         {
             loading ? <Loader /> : 

@@ -10,7 +10,7 @@ import Poster from "../../Components/Poster";
 const SearchPresenter = ({ movieResults, tvResults, searchTerm, handleSubmit, loading, error, updateTerm }) =>
     <Container>
         <Helmet>
-            <title>Search | NomFlix</title>
+            <title>Search | JooFlix</title>
         </Helmet>
         <Form onSubmit={ handleSubmit }>
             <Input placeholder="Search Movies or TV Shows..." value={ searchTerm } onChange={ updateTerm } />
