@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/JooFlix/precache-manifest.653286c9f79091c2abc0a42f9732ae9f.js"
+  "/JooFlix/precache-manifest.aa7552034eb24665093a264336706b1b.js"
 );
 
 self.addEventListener('message', (event) => {
