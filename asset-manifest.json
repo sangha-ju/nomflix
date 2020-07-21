@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/JooFlix/static/js/main.8620ca96.chunk.js",
-    "main.js.map": "/JooFlix/static/js/main.8620ca96.chunk.js.map",
+    "main.js": "/JooFlix/static/js/main.1fe87df6.chunk.js",
+    "main.js.map": "/JooFlix/static/js/main.1fe87df6.chunk.js.map",
     "runtime-main.js": "/JooFlix/static/js/runtime-main.a5dbda6d.js",
     "runtime-main.js.map": "/JooFlix/static/js/runtime-main.a5dbda6d.js.map",
-    "static/js/2.4e193754.chunk.js": "/JooFlix/static/js/2.4e193754.chunk.js",
-    "static/js/2.4e193754.chunk.js.map": "/JooFlix/static/js/2.4e193754.chunk.js.map",
+    "static/js/2.00ea524b.chunk.js": "/JooFlix/static/js/2.00ea524b.chunk.js",
+    "static/js/2.00ea524b.chunk.js.map": "/JooFlix/static/js/2.00ea524b.chunk.js.map",
     "index.html": "/JooFlix/index.html",
-    "precache-manifest.653286c9f79091c2abc0a42f9732ae9f.js": "/JooFlix/precache-manifest.653286c9f79091c2abc0a42f9732ae9f.js",
+    "precache-manifest.aa7552034eb24665093a264336706b1b.js": "/JooFlix/precache-manifest.aa7552034eb24665093a264336706b1b.js",
     "service-worker.js": "/JooFlix/service-worker.js",
-    "static/js/2.4e193754.chunk.js.LICENSE.txt": "/JooFlix/static/js/2.4e193754.chunk.js.LICENSE.txt",
+    "static/js/2.00ea524b.chunk.js.LICENSE.txt": "/JooFlix/static/js/2.00ea524b.chunk.js.LICENSE.txt",
     "static/media/noPosterSmall.png": "/JooFlix/static/media/noPosterSmall.87a0eb6a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a5dbda6d.js",
-    "static/js/2.4e193754.chunk.js",
-    "static/js/main.8620ca96.chunk.js"
+    "static/js/2.00ea524b.chunk.js",
+    "static/js/main.1fe87df6.chunk.js"
   ]
 }

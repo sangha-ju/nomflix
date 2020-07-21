@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80970b6d463296e7260f5ceeabb35795",
+    "revision": "6f39b22918fbe8d64e39e3f313477747",
     "url": "/JooFlix/index.html"
   },
   {
-    "revision": "444db9cbbaefca16547d",
-    "url": "/JooFlix/static/js/2.4e193754.chunk.js"
+    "revision": "025e5c5eb5dd0956624d",
+    "url": "/JooFlix/static/js/2.00ea524b.chunk.js"
   },
   {
     "revision": "aef280276b8d6f56e9d8dc46988119d9",
-    "url": "/JooFlix/static/js/2.4e193754.chunk.js.LICENSE.txt"
+    "url": "/JooFlix/static/js/2.00ea524b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "262d9b22a26529e4ea04",
-    "url": "/JooFlix/static/js/main.8620ca96.chunk.js"
+    "revision": "11fce83a1a1bd9134ffb",
+    "url": "/JooFlix/static/js/main.1fe87df6.chunk.js"
   },
   {
     "revision": "71900a321d1a2a6d2b58",
