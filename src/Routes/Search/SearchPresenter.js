@@ -53,7 +53,7 @@ const SearchPresenter = ({ movieResults, tvResults, searchTerm, handleSubmit, lo
                   movieResults && 
                   tvResults.length === 0 && 
                   movieResults.length === 0 && (
-                  <Message text="Noting found" color="#95a5a6" />
+                  <Message text="Nothing found" color="#95a5a6" />
                 ) }
             </>
         ) }
